@@ -28,7 +28,7 @@ nav {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 300px;
   width: 100%;
 }
 form {
@@ -83,6 +83,7 @@ p {
 }
 .icon {
   display: flex;
+  /* width: ; */
   font-family: "AshteR", "Times New Roman", Times, serif;
 }
 
@@ -162,12 +163,14 @@ button:hover {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  color: #181814;
 }
 .col5 > p {
   color: #f2f2f2;
 }
 .title2 {
   text-align: center;
+  color: #181814;
 }
 .row-1 {
   display: flex;
