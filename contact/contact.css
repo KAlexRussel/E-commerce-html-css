@@ -42,12 +42,13 @@ p {
 }
 
 .forms {
-  margin: 70px 0;
+  margin: 90px 0;
+  display: flex;
 }
 .ad {
   max-width: 1080px;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 30px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -71,7 +72,7 @@ body {
   src: url(../Fonts/AshteR.ttf);
 }
 .kl {
-  margin: 50px;
+  margin: 40px;
   color: #f2f2f2;
 }
 

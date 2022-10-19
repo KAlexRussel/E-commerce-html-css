@@ -17,7 +17,8 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 4px;
+  margin-top: 20px;
 }
 body {
   background-color: #f2f2f2;
@@ -28,21 +29,20 @@ nav {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 449px;
   width: 100%;
 }
 form {
-  min-width: 200px;
+  width: 176px;
   align-content: center;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .form-control {
   height: 30px;
-  width: 107px;
+  /* width: 107px; */
   border: none;
-  padding: 5px;
-  width: 70%;
+  width: 46%;
   background-color: #f2f2f2;
 }
 .form-control:hover {
@@ -61,11 +61,11 @@ form {
 nav ul {
   display: inline-block;
   list-style-type: none;
-  margin-left: 150px;
+  margin-left: 242px;
 }
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 a {
@@ -76,7 +76,6 @@ p {
   color: black;
 }
 .container {
-  /* max-width: 1300px; */
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -85,6 +84,9 @@ p {
   display: flex;
   /* width: ; */
   font-family: "AshteR", "Times New Roman", Times, serif;
+}
+.logo {
+  /* display: none; */
 }
 
 .row {
@@ -100,13 +102,11 @@ p {
   min-width: 300px;
 }
 .col2 > img {
-  /* max-width: 100%; */
+  max-width: 400px;
   padding: 50px 0;
-
-  width: 100%;
-  height: 100vh;
-
+  width: 46%;
   object-fit: contain;
+  margin-left: 314px;
 }
 .col1 h1 {
   font-size: 100px;
@@ -205,4 +205,85 @@ button:hover {
 }
 .kl > h3 {
   margin-bottom: 20px;
+}
+
+#hamburger-icon {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+#hamburger-icon .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #181819;
+  border-radius: 10px;
+}
+#hamburger-icon > div {
+  width: 35px;
+  height: 5px;
+  background-color: #002d73;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+@media screen and (max-width: 500px) {
+  #hamburger-icon {
+    display: block;
+  }
+  form {
+    width: 156px;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .col2 > img {
+    max-width: 400px;
+    padding: 50px 0;
+    width: 99%;
+    object-fit: contain;
+    margin-left: 17px;
+  }
+  .link {
+    display: none;
+  }
+  .offer {
+    padding: 70px 21px;
+    background-color: #181814;
+    background: transparent transparent;
+    margin-top: 30px;
+    height: 170vh;
+  }
+
+  .small-container {
+    /* max-width: 1080px; */
+    margin: auto;
+    padding: 0px;
+    color: #f2f2f2;
+  }
+  .col5 {
+    margin-left: 17px;
+  }
+  .footer-1 {
+    display: block;
+  }
+  .body-1 {
+    display: block;
+  }
+  .open-ul {
+    display: block;
+  }
+  nav {
+    /* flex: 1; */
+    text-align: right;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    width: 70%;
+  }
 }
