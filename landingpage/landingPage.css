@@ -218,24 +218,47 @@ button:hover {
   height: 21px;
   cursor: pointer;
 }
-
-#hamburger-icon .bar {
+.bar {
+  display: block;
   height: 3px;
-  width: 100%;
-  background-color: #181819;
-  border-radius: 10px;
-}
-#hamburger-icon > div {
   width: 35px;
-  height: 5px;
-  background-color: #002d73;
-  margin: 6px 0;
-  transition: 0.4s;
+  background-color: #181819;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 768px) {
   #hamburger-icon {
     display: block;
   }
+  #hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .link {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #fefffe;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-link {
+    margin: 16px 0;
+  }
+  .nav-link.active {
+    left: 0;
+  }
+
   form {
     width: 156px;
     align-content: center;
@@ -249,9 +272,7 @@ button:hover {
     object-fit: contain;
     margin-left: 17px;
   }
-  .link {
-    display: none;
-  }
+
   .offer {
     padding: 70px 21px;
     background-color: #181814;
