@@ -216,6 +216,7 @@ button:hover {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  cursor: pointer;
 }
 
 #hamburger-icon .bar {
