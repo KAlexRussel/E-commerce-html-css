@@ -207,57 +207,87 @@ button:hover {
   margin-bottom: 20px;
 }
 
-#hamburger-icon {
+.hamburger {
   display: none;
   position: absolute;
   top: 1.3rem;
   right: 1rem;
-  flex-direction: column;
+  /*flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
-  cursor: pointer;
-}
-.bar {
-  display: block;
-  height: 3px;
-  width: 35px;
-  background-color: #181819;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  height: 21px;*/
 }
 
-@media screen and (max-width: 768px) {
-  #hamburger-icon {
+.mobile-menu {
+  display: none;
+}
+.hamburger div {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hamburger {
     display: block;
   }
-  #hamburger.active .bar:nth-child(2) {
+  .hamburger div {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #181819;
+    margin: 5px auto;
+
+    transition: 0.4s;
+  }
+  .open.mobile-menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 50vh;
+    width: 86%;
+    background-color: #f2f2f2;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 2rem;
+    /* z-index: 1; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .open .bar2 {
     opacity: 0;
   }
-  #hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px);
+    transform: rotate(45deg) translate(-6px, -8px);
   }
-  #hamburger.active .bar:nth-child(1) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .link {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
+
+  .open .mobile-menu {
+    display: flex;
     flex-direction: column;
-    background-color: #fefffe;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 4px black;
+    width: 158px;
+  }
+
+  .open a {
+    text-decoration: none;
+  }
+
+  .link {
+    display: none;
   }
   .nav-link {
     margin: 16px 0;
   }
-  .nav-link.active {
+  /* .link.active {
     left: 0;
-  }
+  } */
 
   form {
     width: 156px;
@@ -296,8 +326,8 @@ button:hover {
   .body-1 {
     display: block;
   }
-  .open-ul {
-    display: block;
+  .open ul {
+    list-style-type: none;
   }
   nav {
     /* flex: 1; */

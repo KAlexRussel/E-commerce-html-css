@@ -19,15 +19,26 @@
               <img src="../image/fashion.png" width="30px" />
               <h2 class="logo">Gucci</h2>
             </div>
-            <div id="hamburger-icon">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+            <div class="hamburger" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                <li class="nav-link">
+                  <a href="../product/product.html">SERVICES</a>
+                </li>
+                <li class="nav-link">
+                  <a href="../about/aboutPage.html">ABOUT</a>
+                </li>
+                <li class="nav-link">
+                  <a href="../contact/contact.html">CONTACT</a>
+                </li>
+              </ul>
             </div>
 
             <nav>
-              <form class="d-flex" role="search">
-                <span class="border-0">
+              <!-- <form class="d-flex" role="search">
+                <span>
                   <input
                     class="form-control"
                     type="search"
@@ -36,7 +47,7 @@
                   />
                 </span>
                 <button class="button-2" type="submit">Search</button>
-              </form>
+              </form> -->
 
               <ul class="link">
                 <!-- <li><a href="../landingpage/landingPage.html">Home</a></li> -->
@@ -156,17 +167,6 @@
         </div>
       </div>
     </div>
-    <script>
-      function mobileMenu() {
-        if (document.getElementsByClassName("link").style.display == "block") {
-          document.getElementsByClassName("link").style.display == "none";
-        } else {
-          document.getElementsByClassName("link").style.display == "block";
-        }
-        document
-          .getElementsById("hamburg-icon")
-          .addEventlistener("click", link);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
