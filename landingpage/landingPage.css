@@ -74,6 +74,7 @@ form {
   border: none;
   border: 1px solid grey;
   background-color: grey;
+  cursor: pointer;
 }
 nav ul {
   display: inline-block;
@@ -88,6 +89,9 @@ nav ul li {
 a {
   text-decoration: none;
   color: black;
+}
+a:hover {
+  text-decoration: underline;
 }
 p {
   color: black;
@@ -135,6 +139,7 @@ p {
   font-family: "AshteR", "Times New Roman", Times, serif;
 }
 .button-1 {
+  cursor: pointer;
   width: 100px;
   height: 40px;
   background-color: black;
@@ -149,7 +154,8 @@ p {
 }
 
 button:hover {
-  background: gray;
+  background: #f2f2f2;
+  color: #000;
 }
 
 .categories {
