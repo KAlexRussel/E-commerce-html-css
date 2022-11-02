@@ -110,48 +110,51 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <!-- footer -->
+    <div class="footer-1">
+      <div class="foot">
+        <div class="kl">
+          <h3>SHOP</h3>
+          <p>
+            My Account<br />Terms and conditions<br />Returns<br />FAQs<br />
+          </p>
+        </div>
+        <div class="kl">
+          <h3>COMPANY</h3>
+          <p>About us<br />jobs<br />Services<br />contact</p>
+        </div>
+
+        <div class="kl">
+          <h3>SECTIONS</h3>
+          <p>Design<br />Culture<br />Sneakers<br />Style</p>
+        </div>
+
+        <div class="kl">
+          <h3>MORE</h3>
+          <p>Print Magazine<br />News Letter<br />Archive<br /></p>
+        </div>
+      </div>
+      <div class="socials">
+        <span class="css-118najv">
+          <i class="fa-brands fa-linkedin"></i>
+        </span>
+        <span class="css-118najv">
+          <i class="fa-brands fa-facebook"></i>
+        </span>
+        <span class="css-118najv"> <i class="fa-brands fa-youtube"></i> </span>
+        <span class="css-118najv"><i class="fa-brands fa-twitter"></i> </span>
+
+        <span class="css-118najv"><i class="fa-brands fa-github"></i></span>
+      </div>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
   </body>
-  <div class="footer-1">
-    <div class="foot">
-      <div class="kl">
-        <h3>SHOP</h3>
-        <p>My Account<br />Terms and conditions<br />Returns<br />FAQs<br /></p>
-      </div>
-      <div class="kl">
-        <h3>COMPANY</h3>
-        <p>About us<br />jobs<br />Services<br />contact</p>
-      </div>
-
-      <div class="kl">
-        <h3>SECTIONS</h3>
-        <p>Design<br />Culture<br />Sneakers<br />Style</p>
-      </div>
-
-      <div class="kl">
-        <h3>MORE</h3>
-        <p>Print Magazine<br />News Letter<br />Archive<br /></p>
-      </div>
-    </div>
-    <div class="socials">
-      <span class="css-118najv">
-        <i class="fa-brands fa-linkedin"></i>
-      </span>
-      <span class="css-118najv">
-        <i class="fa-brands fa-facebook"></i>
-      </span>
-      <span class="css-118najv"> <i class="fa-brands fa-youtube"></i> </span>
-      <span class="css-118najv"><i class="fa-brands fa-twitter"></i> </span>
-
-      <span class="css-118najv"><i class="fa-brands fa-github"></i></span>
-    </div>
-  </div>
-  <script>
-    const toggleButton = document.getElementsByClassName("toggle-button")[0];
-    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-    toggleButton.addEventListener("click", () => {
-      navbarLinks.classList.toggle("active");
-    });
-  </script>
 </html>
