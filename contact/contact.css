@@ -84,43 +84,6 @@ p {
   align-items: center;
 }
 
-/* form {
-  width: 176px;
-  align-content: center;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.form-control {
-  height: 30px;
-  /* width: 107px; 
-  border: none;
-  width: 49%;
-  background-color: #f2f2f2;
-}
-.form-control:hover {
-  border-color: #f2f2f2;
-} */
-.button-2 {
-  border: none;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 5px;
-  border: none;
-  border: 1px solid grey;
-  background-color: grey;
-  cursor: pointer;
-}
-/* nav ul {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 242px;
-}
-nav ul li {
-  display: inline-block;
-  margin-left: 10px;
-} */
-
 a {
   text-decoration: none;
   color: #181819;
@@ -143,6 +106,9 @@ p {
 .logo {
   color: #f2f2f2;
 }
+.formss {
+  display: block;
+}
 
 .form {
   margin: 49px 0px;
@@ -163,7 +129,6 @@ p {
 }
 .ads > h2 {
   align-items: center;
-  padding: 5px 150px;
 }
 
 body {
@@ -191,7 +156,6 @@ body {
 }
 .pics {
   object-fit: contain;
-  width: 25%;
 }
 .pics > img {
   /* object-fit: cover; */
@@ -270,13 +234,6 @@ body {
     margin-top: 45px;
   }
 
-  .footer-1 {
-    height: 750px;
-    /* align-content: center; */
-    padding: 26px 7px;
-    background-color: #181814;
-    margin-top: 45px;
-  }
   .foot {
     display: block;
   }
