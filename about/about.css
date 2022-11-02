@@ -40,8 +40,8 @@ p {
 .container {
   max-width: 1300px;
   margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
 }
 .icon {
   display: flex;
@@ -65,8 +65,16 @@ p {
   /* display: block; 
   float: left; */
   margin-bottom: 23px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   justify-content: flex-start;
+}
+.story {
+  max-width: 1020px;
+  margin: 5px auto;
+  line-height: 30px;
+  letter-spacing: 2px;
+  /* text-justify: auto; */
+  text-align: justify;
 }
 
 .footer-1 {
