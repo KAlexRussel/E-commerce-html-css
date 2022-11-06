@@ -107,6 +107,8 @@ p {
 }
 .logo {
   color: #f2f2f2;
+  font-size: 17px;
+  padding-top: 3px;
 }
 .formss {
   display: block;
